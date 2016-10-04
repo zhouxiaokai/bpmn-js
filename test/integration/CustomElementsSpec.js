@@ -2,21 +2,21 @@
 
 /* global bootstrapModeler, inject */
 
-var Modeler = require('../../lib/Modeler');
+import Modeler from '../../lib/Modeler';
 
 var canvasEvent = require('../util/MockEvents').createCanvasEvent;
 
 
-var customElementsModules = require('./custom-elements'),
+import customElementsModules from './custom-elements';
     noTouchInteractionModule = { touchInteractionEvents: ['value', null ] },
     modelerModules = Modeler.prototype._modules,
     customModules = [ customElementsModules, noTouchInteractionModule ];
 
 var testModules = [].concat(modelerModules, customModules);
 
-var processDiagramXML = require('../fixtures/bpmn/simple.bpmn');
+import processDiagramXML from '../fixtures/bpmn/simple.bpmn';
 
-var collaborationDiagramXML = require('../fixtures/bpmn/collaboration.bpmn');
+import collaborationDiagramXML from '../fixtures/bpmn/collaboration.bpmn';
 
 
 describe('custom elements', function() {

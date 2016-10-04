@@ -5,11 +5,11 @@ require('../../../TestHelper');
 /* global bootstrapModeler, inject */
 
 
-var coreModule = require('lib/core'),
-    bendpointsModule = require('diagram-js/lib/features/bendpoints'),
-    modelingModule = require('lib/features/modeling'),
-    labelEditingModule = require('lib/features/label-editing'),
-    spaceTool = require('diagram-js/lib/features/space-tool');
+import coreModule from 'lib/core';
+import bendpointsModule from 'diagram-js/lib/features/bendpoints';
+import modelingModule from 'lib/features/modeling';
+import labelEditingModule from 'lib/features/label-editing';
+import spaceTool from 'diagram-js/lib/features/space-tool';
 
 var canvasEvent = require('../../../util/MockEvents').createCanvasEvent;
 

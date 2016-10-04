@@ -1,10 +1,10 @@
 'use strict';
 
-var assign = require('lodash/object/assign');
+import assign from 'lodash/object/assign';
 
-var EventBus = require('diagram-js/lib/core/EventBus');
+import EventBus from 'diagram-js/lib/core/EventBus';
 
-var TestHelper = require('../TestHelper');
+import TestHelper from '../TestHelper';
 
 
 /**

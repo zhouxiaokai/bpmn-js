@@ -1,6 +1,6 @@
 'use strict';
 
-var forEach = require('lodash/collection/forEach');
+import forEach from 'lodash/collection/forEach';
 
 
 function DescriptorTree(tree) {

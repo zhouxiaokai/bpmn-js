@@ -1,26 +1,31 @@
 'use strict';
 
-require('../../../TestHelper');
+import TestHelper from '../../../TestHelper';
 
 /* global bootstrapModeler, inject */
 
-var pick = require('lodash/object/pick'),
-    assign = require('lodash/object/assign');
+import { pick, assign } from 'lodash-es';
 
-var autoResizeModule = require('../../../../lib/features/auto-resize'),
-    modelingModule = require('../../../../lib/features/modeling'),
-    createModule = require('diagram-js/lib/features/create'),
-    coreModule = require('../../../../lib/core'),
-    canvasEvent = require('../../../util/MockEvents').createCanvasEvent;
+import autoResizeModule from '../../../../lib/features/auto-resize';
+import modelingModule from '../../../../lib/features/modeling';
+import createModule from 'diagram-js/lib/features/create';
+import coreModule from '../../../../lib/core';
+
+import { createCanvasEvent as canvasEvent } from '../../../util/MockEvents';
 
 function getBounds(shape) {
   return pick(shape, [ 'x', 'y', 'width', 'height' ]);
 }
 
 
-describe('features/auto-resize', function() {
+describe.only('features/auto-resize', function() {
 
-  var testModules = [ coreModule, modelingModule, autoResizeModule, createModule ];
+  var testModules = [
+    coreModule,
+    modelingModule,
+    autoResizeModule,
+    createModule
+  ];
 
 
   describe('participant', function() {

@@ -4,10 +4,10 @@ require('../../../TestHelper');
 
 /* global bootstrapModeler, inject */
 
-var modelingModule = require('../../../../lib/features/modeling'),
-    replaceModule = require('../../../../lib/features/replace'),
-    moveModule = require('diagram-js/lib/features/move'),
-    coreModule = require('../../../../lib/core');
+import modelingModule from '../../../../lib/features/modeling';
+import replaceModule from '../../../../lib/features/replace';
+import moveModule from 'diagram-js/lib/features/move';
+import coreModule from '../../../../lib/core';
 
 var is = require('../../../../lib/util/ModelUtil').is,
     isExpanded = require('../../../../lib/util/DiUtil').isExpanded,

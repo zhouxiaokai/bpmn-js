@@ -4,9 +4,9 @@ require('../../TestHelper');
 
 /* global bootstrapViewer, inject */
 
-var Events = require('diagram-js/lib/core/EventBus');
+import Events from 'diagram-js/lib/core/EventBus';
 
-var Viewer = require('../../../lib/Viewer');
+import Viewer from '../../../lib/Viewer';
 
 
 describe('environment - mocking', function() {

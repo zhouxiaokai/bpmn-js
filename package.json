@@ -33,6 +33,7 @@
   ],
   "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.2.0",
     "browserify": "^13.0.0",
     "browserify-derequire": "^0.9.1",
     "bundle-collapser": "^1.1.1",
@@ -63,6 +64,7 @@
     "mocha-test-container-support": "0.2.0",
     "phantomjs": "^1.9.19",
     "rollup": "^0.36.0",
+    "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-commonjs": "^5.0.4",
     "rollup-plugin-inject": "^2.0.0",
     "rollup-plugin-json": "^2.0.2",
@@ -84,6 +86,7 @@
     "ids": "^0.2.0",
     "inherits": "^2.0.1",
     "lodash": "^3.0.1",
+    "lodash-es": "^4.16.2",
     "min-dom": "^0.2.0",
     "object-refs": "^0.1.1"
   }

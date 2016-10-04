@@ -1,20 +1,20 @@
 'use strict';
 
-var TestHelper = require('../../../TestHelper');
+import TestHelper from '../../../TestHelper';
 
 /* global bootstrapModeler, inject, sinon */
 
-var bpmnCopyPasteModule = require('../../../../lib/features/copy-paste'),
-    copyPasteModule = require('diagram-js/lib/features/copy-paste'),
-    tooltipsModule = require('diagram-js/lib/features/tooltips'),
-    modelingModule = require('../../../../lib/features/modeling'),
-    coreModule = require('../../../../lib/core');
+import bpmnCopyPasteModule from '../../../../lib/features/copy-paste';
+import copyPasteModule from 'diagram-js/lib/features/copy-paste';
+import tooltipsModule from 'diagram-js/lib/features/tooltips';
+import modelingModule from '../../../../lib/features/modeling';
+import coreModule from '../../../../lib/core';
 
-var map = require('lodash/collection/map'),
-    forEach = require('lodash/collection/forEach'),
-    uniq = require('lodash/array/uniq');
+import map from 'lodash/collection/map';
+import forEach from 'lodash/collection/forEach';
+import uniq from 'lodash/array/uniq';
 
-var DescriptorTree = require('./DescriptorTree');
+import DescriptorTree from './DescriptorTree';
 
 
 describe('features/copy-paste', function() {
@@ -22,10 +22,10 @@ describe('features/copy-paste', function() {
   var testModules = [ bpmnCopyPasteModule, copyPasteModule, tooltipsModule, modelingModule, coreModule ];
 
   var basicXML = require('../../../fixtures/bpmn/features/copy-paste/basic.bpmn'),
-      propertiesXML = require('../../../fixtures/bpmn/features/copy-paste/properties.bpmn'),
-      collaborationXML = require('../../../fixtures/bpmn/features/copy-paste/collaboration.bpmn'),
-      collaborationMultipleXML = require('../../../fixtures/bpmn/features/copy-paste/collaboration-multiple.bpmn'),
-      collaborationAssociations = require('../../../fixtures/bpmn/features/copy-paste/data-associations.bpmn');
+import propertiesXML from '../../../fixtures/bpmn/features/copy-paste/properties.bpmn';
+import collaborationXML from '../../../fixtures/bpmn/features/copy-paste/collaboration.bpmn';
+import collaborationMultipleXML from '../../../fixtures/bpmn/features/copy-paste/collaboration-multiple.bpmn';
+import collaborationAssociations from '../../../fixtures/bpmn/features/copy-paste/data-associations.bpmn';
 
 
   describe('basic diagram', function() {

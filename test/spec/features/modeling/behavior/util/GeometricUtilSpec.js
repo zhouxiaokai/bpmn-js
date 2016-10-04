@@ -2,7 +2,7 @@
 
 require('../../../../../TestHelper');
 
-var GeometricUtil = require('lib/features/modeling/behavior/util/GeometricUtil');
+import GeometricUtil from 'lib/features/modeling/behavior/util/GeometricUtil';
 
 
 describe('modeling/behavior/util - GeometricUtil', function() {

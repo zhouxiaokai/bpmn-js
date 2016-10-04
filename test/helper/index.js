@@ -28,19 +28,19 @@
  * ```
  */
 
-var unique = require('lodash/array/unique'),
-    isFunction = require('lodash/lang/isFunction'),
-    merge = require('lodash/object/merge'),
-    forEach = require('lodash/collection/forEach');
+import unique from 'lodash/array/unique';
+import isFunction from 'lodash/lang/isFunction';
+import merge from 'lodash/object/merge';
+import forEach from 'lodash/collection/forEach';
 
-var TestContainer = require('mocha-test-container-support');
+import TestContainer from 'mocha-test-container-support';
 
-var Modeler = require('../../lib/Modeler'),
-    Viewer = require('../../lib/Viewer');
+import Modeler from '../../lib/Modeler';
+import Viewer from '../../lib/Viewer';
 
 var OPTIONS, BPMN_JS;
 
-var translationModule = require('./TranslationCollector');
+import translationModule from './TranslationCollector';
 
 
 function bootstrapBpmnJS(BpmnJS, diagram, options, locals) {

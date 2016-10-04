@@ -5,13 +5,13 @@ require('../../../../TestHelper');
 /* global bootstrapModeler, inject */
 
 
-var modelingModule = require('../../../../../lib/features/modeling'),
-    coreModule = require('../../../../../lib/core');
+import modelingModule from '../../../../../lib/features/modeling';
+import coreModule from '../../../../../lib/core';
 
 
 var resizeTRBL = require('diagram-js/lib/features/resize/ResizeUtil').resizeTRBL;
 
-var pick = require('lodash/object/pick');
+import pick from 'lodash/object/pick';
 
 function getBounds(element) {
   return pick(element, [ 'x', 'y', 'width', 'height']);

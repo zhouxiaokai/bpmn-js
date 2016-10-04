@@ -1,12 +1,12 @@
 'use strict';
 
-var TestContainer = require('mocha-test-container-support');
+import TestContainer from 'mocha-test-container-support';
 
-var Diagram = require('diagram-js/lib/Diagram');
+import Diagram from 'diagram-js/lib/Diagram';
 
-var Viewer = require('../../lib/Viewer');
+import Viewer from '../../lib/Viewer';
 
-var inherits = require('inherits');
+import inherits from 'inherits';
 
 
 describe('Viewer', function() {
@@ -283,7 +283,7 @@ describe('Viewer', function() {
 
       // given
       var someXML = require('../fixtures/bpmn/simple.bpmn'),
-          otherXML = require('../fixtures/bpmn/basic.bpmn');
+import otherXML from '../fixtures/bpmn/basic.bpmn';
 
       var viewer = new Viewer({ container: container });
 
@@ -645,7 +645,7 @@ describe('Viewer', function() {
           additionalModdleDescriptors = {
             custom: require('../fixtures/json/model/custom')
           },
-          customOverride = require('../fixtures/json/model/custom-override');
+import customOverride from '../fixtures/json/model/custom-override';
 
       function CustomViewer(options) {
         Viewer.call(this, options);

@@ -1,8 +1,8 @@
 'use strict';
 
-var inherits = require('inherits');
+import inherits from 'inherits';
 
-var BaseRenderer = require('diagram-js/lib/draw/BaseRenderer');
+import BaseRenderer from 'diagram-js/lib/draw/BaseRenderer';
 
 var componentsToPath = require('diagram-js/lib/util/RenderUtil').componentsToPath;
 

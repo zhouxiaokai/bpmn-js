@@ -1,13 +1,13 @@
 'use strict';
 
-var TestHelper = require('../helper');
+import TestHelper from '../helper';
 
 var getCenter = require('diagram-js/lib/layout/LayoutUtil').getCenter;
 
-var isArray = require('lodash/lang/isArray'),
-    map = require('lodash/collection/map'),
-    pick = require('lodash/object/pick'),
-    assign = require('lodash/object/assign');
+import isArray from 'lodash/lang/isArray';
+import map from 'lodash/collection/map';
+import pick from 'lodash/object/pick';
+import assign from 'lodash/object/assign';
 
 
 function invoke(fn) {

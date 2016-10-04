@@ -4,10 +4,10 @@ require('../../../../TestHelper');
 
 /* global bootstrapModeler, inject */
 
-var pick = require('lodash/object/pick');
+import pick from 'lodash/object/pick';
 
-var modelingModule = require('../../../../../lib/features/modeling'),
-    coreModule = require('../../../../../lib/core');
+import modelingModule from '../../../../../lib/features/modeling';
+import coreModule from '../../../../../lib/core';
 
 function getBounds(element) {
   return pick(element, [ 'x', 'y', 'width', 'height' ]);

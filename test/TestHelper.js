@@ -11,6 +11,9 @@ TestHelper.insertCSS('diagram-js-testing.css',
 );
 
 
+import BoundsMatchers from 'diagram-js/test/matchers/BoundsMatchers';
+import ConnectionMatchers from 'diagram-js/test/matchers/ConnectionMatchers';
+
 // add suite specific matchers
-global.chai.use(require('diagram-js/test/matchers/BoundsMatchers'));
-global.chai.use(require('diagram-js/test/matchers/ConnectionMatchers'));
+global.chai.use(BoundsMatchers);
+global.chai.use(ConnectionMatchers);

@@ -1,10 +1,10 @@
 'use strict';
 
-var inherits = require('inherits');
+import inherits from 'inherits';
 
 var isBpmn = require('../../../lib/util/ModelUtil').is;
 
-var CommandInterceptor = require('diagram-js/lib/command/CommandInterceptor');
+import CommandInterceptor from 'diagram-js/lib/command/CommandInterceptor';
 
 
 function isCustom(element, type) {

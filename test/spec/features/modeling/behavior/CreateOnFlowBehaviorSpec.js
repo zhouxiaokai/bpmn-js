@@ -4,9 +4,9 @@ require('../../../../TestHelper');
 
 /* global inject, bootstrapModeler */
 
-var flatten = require('lodash/array/flatten');
+import flatten from 'lodash/array/flatten';
 
-var modelingModule = require('../../../../../lib/features/modeling');
+import modelingModule from '../../../../../lib/features/modeling';
 
 
 describe('modeling/behavior - drop on connection', function() {

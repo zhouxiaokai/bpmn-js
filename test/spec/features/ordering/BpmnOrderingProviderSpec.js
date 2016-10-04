@@ -1,6 +1,6 @@
 'use strict';
 
-var Helper = require('./Helper');
+import Helper from './Helper';
 
 /* global bootstrapModeler, inject */
 
@@ -8,8 +8,8 @@ var move = Helper.move,
     attach = Helper.attach,
     expectZOrder = Helper.expectZOrder;
 
-var modelingModule = require('../../../../lib/features/modeling'),
-    coreModule = require('../../../../lib/core');
+import modelingModule from '../../../../lib/features/modeling';
+import coreModule from '../../../../lib/core';
 
 
 describe('features/modeling - ordering', function() {

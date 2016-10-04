@@ -4,13 +4,13 @@ require('../../../TestHelper');
 
 /* global bootstrapModeler, inject */
 
-var replacePreviewModule = require('../../../../lib/features/replace-preview'),
-    modelingModule = require('../../../../lib/features/modeling'),
-    coreModule = require('../../../../lib/core');
+import replacePreviewModule from '../../../../lib/features/replace-preview';
+import modelingModule from '../../../../lib/features/modeling';
+import coreModule from '../../../../lib/core';
 
 var canvasEvent = require('../../../util/MockEvents').createCanvasEvent;
 
-var assign = require('lodash/object/assign');
+import assign from 'lodash/object/assign';
 
 
 describe('features/replace-preview', function() {

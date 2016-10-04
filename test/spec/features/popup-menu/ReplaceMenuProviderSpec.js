@@ -2,18 +2,18 @@
 
 /* global bootstrapModeler, inject */
 
-var TestHelper = require('../../../TestHelper');
+import TestHelper from '../../../TestHelper';
 
 var globalEvent = require('../../../util/MockEvents').createEvent;
 
-var coreModule = require('../../../../lib/core'),
-    modelingModule = require('../../../../lib/features/modeling'),
-    replaceMenuProviderModule = require('../../../../lib/features/popup-menu'),
-    customRulesModule = require('../../../util/custom-rules');
+import coreModule from '../../../../lib/core';
+import modelingModule from '../../../../lib/features/modeling';
+import replaceMenuProviderModule from '../../../../lib/features/popup-menu';
+import customRulesModule from '../../../util/custom-rules';
 
-var domQuery = require('min-dom/lib/query'),
-    domClasses = require('min-dom/lib/classes'),
-    find = require('lodash/collection/find');
+import domQuery from 'min-dom/lib/query';
+import domClasses from 'min-dom/lib/classes';
+import find from 'lodash/collection/find';
 
 var is = require('../../../../lib/util/ModelUtil').is,
     isExpanded = require('../../../../lib/util/DiUtil').isExpanded;
@@ -53,7 +53,7 @@ function triggerAction(entries, id) {
 describe('features/popup-menu - replace menu provider', function() {
 
   var diagramXMLMarkers = require('../../../fixtures/bpmn/draw/activity-markers-simple.bpmn'),
-      diagramXMLReplace = require('../../../fixtures/bpmn/features/replace/01_replace.bpmn');
+import diagramXMLReplace from '../../../fixtures/bpmn/features/replace/01_replace.bpmn';
 
   var testModules = [
     coreModule,

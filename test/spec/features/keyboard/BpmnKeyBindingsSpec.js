@@ -1,11 +1,11 @@
 'use strict';
 
-var TestContainer = require('mocha-test-container-support');
+import TestContainer from 'mocha-test-container-support';
 
-var coreModule = require('../../../../lib/core'),
-    editorActionsModule = require('../../../../lib/features/editor-actions'),
-    keyboardModule = require('../../../../lib/features/keyboard'),
-    modelingModule = require('../../../../lib/features/modeling');
+import coreModule from '../../../../lib/core';
+import editorActionsModule from '../../../../lib/features/editor-actions';
+import keyboardModule from '../../../../lib/features/keyboard';
+import modelingModule from '../../../../lib/features/modeling';
 
 var createKeyEvent = require('diagram-js/test/util/KeyEvents').createKeyEvent;
 

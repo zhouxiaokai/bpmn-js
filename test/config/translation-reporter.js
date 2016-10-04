@@ -1,10 +1,10 @@
 'use strict';
 
-var fs = require('fs');
-var path = require('path');
+import fs from 'fs';
+import path from 'path';
 
-var unique = require('lodash/array/unique');
-var sortBy = require('lodash/collection/sortBy');
+import unique from 'lodash/array/unique';
+import sortBy from 'lodash/collection/sortBy';
 
 function TranslationReporter() {
   process.env.TRANSLATIONS = 'enabled';

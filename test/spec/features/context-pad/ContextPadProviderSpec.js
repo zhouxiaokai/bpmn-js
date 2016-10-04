@@ -1,10 +1,10 @@
 'use strict';
 
-var TestHelper = require('../../../TestHelper');
+import TestHelper from '../../../TestHelper';
 
-var TestContainer = require('mocha-test-container-support');
+import TestContainer from 'mocha-test-container-support';
 
-var domQuery = require('min-dom/lib/query');
+import domQuery from 'min-dom/lib/query';
 
 var is = require('../../../../lib/util/ModelUtil').is;
 
@@ -14,12 +14,12 @@ var canvasEvent = require('../../../util/MockEvents').createCanvasEvent;
 /* global bootstrapModeler, inject */
 
 
-var contextPadModule = require('../../../../lib/features/context-pad'),
-    coreModule = require('../../../../lib/core'),
-    modelingModule = require('../../../../lib/features/modeling'),
-    replaceMenuModule = require('../../../../lib/features/popup-menu'),
-    createModule = require('diagram-js/lib/features/create'),
-    customRulesModule = require('../../../util/custom-rules');
+import contextPadModule from '../../../../lib/features/context-pad';
+import coreModule from '../../../../lib/core';
+import modelingModule from '../../../../lib/features/modeling';
+import replaceMenuModule from '../../../../lib/features/popup-menu';
+import createModule from 'diagram-js/lib/features/create';
+import customRulesModule from '../../../util/custom-rules';
 
 
 describe('features - context-pad', function() {

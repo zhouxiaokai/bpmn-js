@@ -2,6 +2,7 @@ import rollupNodeResolve from 'rollup-plugin-node-resolve';
 import rollupString from 'rollup-plugin-string';
 import rollupJson from 'rollup-plugin-json';
 import rollupInject from 'rollup-plugin-inject';
+import rollupBabel from 'rollup-plugin-babel';
 
 import path from 'path';
 
@@ -12,8 +13,19 @@ export default {
   entry: 'lib/Viewer.js',
   dest: 'bundle.js',
   moduleName: 'BpmnJS',
-  format: 'umd',
+  format: 'iife',
   plugins: [
+    rollupNodeResolve({
+      main: true,
+      browser: true,
+      preferBuiltins: false
+    }),
+    rollupCommonJS({
+      ignoreGlobal: true,
+      namedExports: {
+        'node_modules/bpmn-moddle/node_modules/moddle-xml/node_modules/sax/lib/sax.js': [ 'SAXParser' ]
+      }
+    }),
     rollupInject({
       // control which files this plugin applies to
       // with include/exclude
@@ -21,21 +33,18 @@ export default {
       Buffer: path.resolve('nop.js'),
       process: path.resolve('nop.js')
     }),
-    rollupNodeResolve({
-      main: true,
-      // skip: [ 'some-big-dependency' ],
-      browser: true,
-      extensions: [ '.js' ],
-      preferBuiltins: false
-    }),
     rollupJson(),
-    rollupCommonJS(),
     rollupString({
       // Required to be specified
       include: '**/*.html',
 
       // Undefined by default
-      exclude: ['**/index.html']
+      exclude: undefined
     })
+    /*,
+    rollupBabel({
+      babelrc: false,
+      presets: [ 'es2015-rollup' ]
+    })*/
   ]
 };

@@ -1,8 +1,8 @@
 'use strict';
 
-var Modeler = require('../../lib/Modeler');
+import Modeler from '../../lib/Modeler';
 
-var TestContainer = require('mocha-test-container-support');
+import TestContainer from 'mocha-test-container-support';
 
 describe('Modeler', function() {
 
@@ -295,7 +295,7 @@ describe('Modeler', function() {
 
       // given
       var someXML = require('../fixtures/bpmn/simple.bpmn'),
-          otherXML = require('../fixtures/bpmn/basic.bpmn');
+import otherXML from '../fixtures/bpmn/basic.bpmn';
 
       var modeler = new Modeler({ container: container });
 
@@ -377,7 +377,7 @@ describe('Modeler', function() {
 
       // given
       var someXML = require('../fixtures/bpmn/simple.bpmn'),
-          otherXML = require('../fixtures/bpmn/basic.bpmn');
+import otherXML from '../fixtures/bpmn/basic.bpmn';
 
       var modeler = new Modeler({ container: container });
 

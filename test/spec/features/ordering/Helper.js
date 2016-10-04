@@ -1,8 +1,8 @@
 'use strict';
 
-var TestHelper = require('../../../TestHelper');
+import TestHelper from '../../../TestHelper';
 
-var map = require('lodash/collection/map');
+import map from 'lodash/collection/map';
 
 // polyfill, because Math.sign is not available in PhantomJS, IE and Safari
 // https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Math/sign
@@ -162,7 +162,7 @@ function compareZOrder(aId, bId) {
 }
 
 
-var forEach = require('lodash/collection/forEach');
+import forEach from 'lodash/collection/forEach';
 
 function expectZOrder() {
 

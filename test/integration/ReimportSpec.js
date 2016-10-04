@@ -1,8 +1,8 @@
 'use strict';
 
-var Modeler = require('../../lib/Modeler');
+import Modeler from '../../lib/Modeler';
 
-var TestContainer = require('mocha-test-container-support');
+import TestContainer from 'mocha-test-container-support';
 
 function delay(fn) {
   setTimeout(fn, 10);
@@ -19,9 +19,9 @@ describe.skip('scenario - successive reopening', function() {
 
 
   var boundaryXML = require('../fixtures/bpmn/boundary-events.bpmn'),
-      containersXML = require('../fixtures/bpmn/containers.bpmn'),
-      flowMarkersXML = require('../fixtures/bpmn/flow-markers.bpmn'),
-      simpleXML = require('../fixtures/bpmn/simple.bpmn');
+import containersXML from '../fixtures/bpmn/containers.bpmn';
+import flowMarkersXML from '../fixtures/bpmn/flow-markers.bpmn';
+import simpleXML from '../fixtures/bpmn/simple.bpmn';
 
   var allDiagrams = [
     boundaryXML,

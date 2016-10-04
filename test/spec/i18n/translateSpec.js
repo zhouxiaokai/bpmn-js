@@ -7,14 +7,14 @@ require('test/TestHelper');
 
 /* global bootstrapModeler, inject */
 
-var coreModule = require('lib/core'),
-    translateModule = require('diagram-js/lib/i18n/translate'),
-    customTranslateModule = require('./custom-translate'),
-    modelingModule = require('lib/features/modeling'),
-    paletteModule = require('lib/features/palette'),
-    contextPadModule = require('lib/features/context-pad');
+import coreModule from 'lib/core';
+import translateModule from 'diagram-js/lib/i18n/translate';
+import customTranslateModule from './custom-translate';
+import modelingModule from 'lib/features/modeling';
+import paletteModule from 'lib/features/palette';
+import contextPadModule from 'lib/features/context-pad';
 
-var diagramXML = require('test/fixtures/bpmn/simple.bpmn');
+import diagramXML from 'test/fixtures/bpmn/simple.bpmn';
 
 
 skip ? describe.only : describe('i18n - translate', function() {

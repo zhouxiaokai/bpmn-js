@@ -1,8 +1,8 @@
 'use strict';
 
-var TestContainer = require('mocha-test-container-support');
+import TestContainer from 'mocha-test-container-support';
 
-var TestHelper = require('../../../TestHelper');
+import TestHelper from '../../../TestHelper';
 
 /* global bootstrapViewer, inject */
 
@@ -12,11 +12,11 @@ TestHelper.insertCSS('diagram-js-label-editing.css',
 );
 
 
-var labelEditingModule = require('../../../../lib/features/label-editing'),
-    coreModule = require('../../../../lib/core'),
-    draggingModule = require('diagram-js/lib/features/dragging');
+import labelEditingModule from '../../../../lib/features/label-editing';
+import coreModule from '../../../../lib/core';
+import draggingModule from 'diagram-js/lib/features/dragging';
 
-var LabelUtil = require('../../../../lib/features/label-editing/LabelUtil');
+import LabelUtil from '../../../../lib/features/label-editing/LabelUtil';
 
 function triggerKeyEvent(element, event, code) {
   var e = document.createEvent('Events');

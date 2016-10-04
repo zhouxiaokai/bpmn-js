@@ -2,8 +2,8 @@
 
 require('../../TestHelper');
 
-var coreModule = require('../../../lib/core'),
-    rendererModule = require('../../../lib/draw');
+import coreModule from '../../../lib/core';
+import rendererModule from '../../../lib/draw';
 
 /* global bootstrapViewer, bootstrapModeler, inject */
 

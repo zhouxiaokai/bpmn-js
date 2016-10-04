@@ -5,8 +5,8 @@ require('../../../TestHelper');
 /* global bootstrapModeler, inject */
 
 
-var modelingModule = require('../../../../lib/features/modeling'),
-    coreModule = require('../../../../lib/core');
+import modelingModule from '../../../../lib/features/modeling';
+import coreModule from '../../../../lib/core';
 
 
 describe('features/modeling - resize shape', function() {

@@ -4,10 +4,10 @@ require('../../../TestHelper');
 
 /* global bootstrapModeler, inject */
 
-var coreModule = require('../../../../lib/core'),
-    modelingModule = require('../../../../lib/features/modeling'),
-    moveModule = require('diagram-js/lib/features/move'),
-    snappingModule = require('../../../../lib/features/snapping');
+import coreModule from '../../../../lib/core';
+import modelingModule from '../../../../lib/features/modeling';
+import moveModule from 'diagram-js/lib/features/move';
+import snappingModule from '../../../../lib/features/snapping';
 
 var canvasEvent = require('../../../util/MockEvents').createCanvasEvent;
 

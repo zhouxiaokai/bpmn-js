@@ -3,14 +3,14 @@
 require('../../TestHelper');
 
 
-var TestContainer = require('mocha-test-container-support');
+import TestContainer from 'mocha-test-container-support';
 
-var Diagram = require('diagram-js/lib/Diagram'),
-    BpmnModdle = require('bpmn-moddle'),
-    Importer = require('../../../lib/import/Importer'),
-    Viewer = require('../../../lib/Viewer');
+import Diagram from 'diagram-js/lib/Diagram';
+import BpmnModdle from 'bpmn-moddle';
+import Importer from '../../../lib/import/Importer';
+import Viewer from '../../../lib/Viewer';
 
-var find = require('lodash/collection/find');
+import find from 'lodash/collection/find';
 
 
 describe('import - Importer', function() {

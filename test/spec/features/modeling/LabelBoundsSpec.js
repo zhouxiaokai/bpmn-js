@@ -2,9 +2,9 @@
 
 /* global bootstrapModeler, inject, sinon */
 
-var Modeler = require('../../../../lib/Modeler');
+import Modeler from '../../../../lib/Modeler';
 
-var TestContainer = require('mocha-test-container-support');
+import TestContainer from 'mocha-test-container-support';
 
 describe('label bounds', function() {
 
