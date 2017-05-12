@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="sid-38422fae-e03e-43a3-bef4-bd33b32041b2" targetNamespace="http://bpmn.io/bpmn" exporter="http://bpmn.io" exporterVersion="0.10.1">
+  <process id="Process_1" isExecutable="false">
+    <exclusiveGateway id="LabelBottom" name="BOTTOM" />
+    <exclusiveGateway id="LabelLeft" name="LEFT" />
+    <exclusiveGateway id="LabelTop" name="TOP" />
+    <exclusiveGateway id="LabelRight" name="RIGHT" />
+    <exclusiveGateway id="LabelBottomLeft" name="BOTTOM_LEFT" />
+  </process>
+  <bpmndi:BPMNDiagram id="BpmnDiagram_1">
+    <bpmndi:BPMNPlane id="BpmnPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="LabelBottom_di" bpmnElement="LabelBottom" isMarkerVisible="true">
+        <omgdc:Bounds x="113" y="89" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="107" y="129" width="49" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="LabelLeft_di" bpmnElement="LabelLeft" isMarkerVisible="true">
+        <omgdc:Bounds x="309" y="82" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="263" y="101" width="30" height="24" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="LabelTop_di" bpmnElement="LabelTop" isMarkerVisible="true">
+        <omgdc:Bounds x="309" y="225" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="322" y="198" width="24" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="LabelRight_di" bpmnElement="LabelRight" isMarkerVisible="true">
+        <omgdc:Bounds x="106" y="225" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="168" y="244" width="37" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="LabelBottomLeft_di" bpmnElement="LabelBottomLeft" isMarkerVisible="true">
+        <omgdc:Bounds x="532" y="82" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="474" y="131" width="83" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>
